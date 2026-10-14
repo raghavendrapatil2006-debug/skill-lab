@@ -6,7 +6,7 @@ import numpy as np
 
 def make_test_image():
     """Noisy white image with 5 coloured shapes."""
-    img = np.full((1500, 700, 3), 245, np.uint8)
+    img = np.full((500, 700, 3), 245, np.uint8)
     cv2.circle(img, (120, 120), 60, (90, 90, 250), -1)                    # circle
     cv2.rectangle(img, (260, 60), (420, 180), (60, 120, 230), -1)         # box (160x120)
     cv2.rectangle(img, (500, 70), (620, 190), (200, 120, 80), -1)         # square (120x120)
